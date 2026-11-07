@@ -1,0 +1,20 @@
+{
+  "name": "express-api-produk",
+  "version": "1.0.0",
+  "description": "Tugas Live Coding Pemrograman Web - API Daftar Produk ExpressJS",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "node test.js"
+  },
+  "keywords": [
+    "express",
+    "api",
+    "products"
+  ],
+  "author": "Umar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
