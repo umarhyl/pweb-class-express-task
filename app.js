@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const productRoutes = require('./routes/productRoutes');
 
@@ -12,7 +13,7 @@ app.use('/products', productRoutes);
 
 // Root route opsional untuk cek status API
 app.get('/', (req, res) => {
-  res.json({ message: 'API Produk berjalan aktif' });
+  res.json({ message: 'API Produk dengan Prisma ORM berjalan aktif' });
 });
 
 // Jalankan server jika dijalankan langsung
