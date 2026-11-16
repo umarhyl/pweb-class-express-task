@@ -1,9 +1,13 @@
 require('dotenv').config();
 const express = require('express');
+const cors = require('cors');
 const productRoutes = require('./routes/productRoutes');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+// Enable CORS for frontend integration
+app.use(cors());
 
 // Middleware untuk memproses request body JSON
 app.use(express.json());
